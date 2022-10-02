@@ -1,0 +1,115 @@
+.shop-mail {
+  background-color: #fff;
+
+  &__header {
+    border-bottom: 2px solid $bg-main;
+    &-title {
+      text-decoration: none;
+    }
+    &-left,
+    &-mail,
+    &-mail-item {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    &-mail {
+      padding-left: 1.5rem;
+      gap: 0 15px;
+      font-size: 16px;
+      color: $orange-dark;
+      margin-left: 1.5rem;
+    }
+    &-mail-item {
+      img {
+        height: 17px;
+        width: 17px;
+        margin-right: 5px;
+      }
+    }
+    // right
+    &-right {
+      a {
+        i {
+          font-size: 18px;
+          margin-left: 5px;
+          transform: translateY(-1px);
+        }
+      }
+    }
+  }
+  &__separation {
+    position: relative;
+    &::after {
+      position: absolute;
+      left: -1.5rem;
+      content: "";
+      height: 1.9rem;
+      border: 1px solid rgba(251, 84, 51, 0.3);
+    }
+  }
+}
+
+.shop-mail {
+  &__slider {
+    display: flex;
+  }
+  &__ad {
+    padding: 1rem 0 0 1rem;
+    width: 400px;
+    height: 472px;
+    &-item {
+      img {
+        width: 100%;
+        height: 100%;
+        object-fit: contain;
+      }
+    }
+    //  gán vào item
+    &:hover .slick-next,
+    &:hover .slick-prev {
+      visibility: visible;
+      transition: all 0.4s linear;
+      opacity: 1;
+    }
+  }
+
+  &__promotion {
+    width: 80rem;
+    .promotion-group__item {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      height: 236px;
+      //   width: 20rem;
+      padding: 1rem;
+      a {
+        text-decoration: none;
+        font-size: $font-14;
+        color: $orange-bold;
+        i {
+          font-size: 20px;
+          margin-left: 5px;
+          transform: translateY(1px);
+        }
+      }
+      img {
+        width: 100%;
+        object-fit: contain;
+      }
+      span {
+        display: inline-block;
+        font-size: 16px;
+        transform: translateY(-30px);
+      }
+    }
+    // gán vào item
+    &:hover .slick-next,
+    &:hover .slick-prev {
+      font-size: 25px;
+      padding: 0.5rem 1.7rem;
+    }
+  }
+}

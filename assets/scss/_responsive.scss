@@ -1,0 +1,262 @@
+// pc
+
+// tablet
+@media (max-width: 1023px) {
+  // header
+  main {
+    margin-top: 0;
+  }
+  .header__navbar {
+    display: none;
+  }
+  .header__navbar-bottom {
+    display: none;
+  }
+  .header__search-inner {
+    flex-direction: row-reverse;
+    padding: 3px;
+  }
+  .header__search-button {
+    background-color: transparent;
+    color: $orange-bold;
+    padding: 0 10px;
+  }
+
+  .header__search-inner input {
+    background-color: transparent;
+    &::-webkit-input-placeholder {
+      /* Chrome/Opera/Safari */
+      color: $orange-bold;
+    }
+    &::-moz-placeholder {
+      /* Firefox 19+ */
+      color: $orange-bold;
+    }
+    &:-ms-input-placeholder {
+      /* IE 10+ */
+      color: $orange-bold;
+    }
+    &:-moz-placeholder {
+      /* Firefox 18- */
+      color: $orange-bold;
+    }
+  }
+
+  .header {
+    transition: all 0.5s linear;
+
+    height: 70px;
+    background: rgba(255, 255, 255, 0.2);
+    padding: 0 2rem;
+    &__logo {
+      display: none;
+    }
+  }
+  .header-mobile {
+    transition: all 0.5s linear;
+
+    background: #fff !important;
+    .header__cart-link {
+      color: $orange-bold;
+    }
+    .header__search-inner {
+      background-color: #75757580;
+      color: $orange-bold;
+    }
+  }
+  .header__search-inner-camera {
+    display: block;
+    margin-right: 5px;
+    color: $orange-bold;
+    font-size: 25px;
+    transform: translateY(3px);
+  }
+  .header__cart {
+    transform: translateY(3px);
+  }
+  // banner
+  .banner {
+    &__carousel {
+      width: 100%;
+    }
+    &__left {
+      width: 100%;
+    }
+    &__right {
+      display: none;
+    }
+  }
+  .header {
+    padding: 0 1rem;
+    &__cart {
+      &-inner {
+        padding-right: 0;
+      }
+      &-list {
+        display: none;
+      }
+    }
+    .header__search-inner {
+      font-size: $font-13;
+    }
+    .header__search-inner-camera {
+      font-size: 22px;
+      transform: translateY(3px);
+    }
+  }
+
+  // banner
+  .banner {
+    .banner__carousel-list {
+      height: 175px;
+    }
+    .banner__carousel-item img {
+      width: 100%;
+      height: 175px;
+    }
+    .slick-dots {
+      transform: translateY(-8rem);
+      button {
+        width: 7px;
+        height: 7px;
+      }
+    }
+    .banner__bottom-item img {
+      width: 35px;
+      height: 35px;
+    }
+    .banner__bottom-item a {
+      font-size: 9px;
+      span {
+        padding: 0 2px;
+      }
+    }
+  }
+  // categories
+  .categories {
+    .categories__top h2 {
+      font-size: 16px;
+    }
+  }
+  // flash sale
+  .flash-sale {
+    .flash-sale__header-left {
+      gap: 0 5px;
+    }
+    .flash-sale__header-right a {
+    }
+    .flash-sale__img {
+      width: 9rem;
+    }
+    .flash-sale__image {
+      width: 135px;
+      height: 135px;
+    }
+    .flash-sale__price {
+      font-size: 13px;
+      color: $orange-bold;
+      font-weight: 500;
+      span {
+        transform: translateY(1px);
+      }
+    }
+    .flash-sale__sold {
+      font-size: 8px;
+      margin-top: 5px;
+      background-color: rgba(0, 0, 0, 0.15);
+    }
+    .discount-draw-lager {
+      font-size: $font-13;
+      &::after {
+        border-width: 41px 20px 6px 20px;
+      }
+    }
+    .discount__percent {
+      color: $orange-bold;
+    }
+  }
+  // shopee mail
+  .shop-mail {
+    .shop-mail__header-mail {
+      display: none;
+    }
+    .shop-mail__ad,
+    .shop-mail__promotion {
+      width: 50%;
+    }
+  }
+  // today suggestion
+  .today-suggestions__top {
+    top: 7rem;
+  }
+  .today-suggestions__item {
+    width: calc(100% / 4);
+  }
+  .today-suggestions__more a {
+    width: 95%;
+  }
+  // footer
+  .footer {
+    a {
+      font-size: 9px;
+    }
+  }
+
+  //
+  .top-section__right a {
+    padding: 0;
+    font-size: $font-12;
+  }
+  .top-section__left {
+    font-size: 16px;
+  }
+  .text-gray {
+    color: $orange-bold;
+  }
+  .slick-next,
+  .slick-prev {
+    display: none !important;
+  }
+}
+// mobile
+@media (max-width: 740px) {
+  .shop-mail {
+    .shop-mail__slider {
+      display: block;
+    }
+
+    .shop-mail__ad {
+      width: 100%;
+      height: auto;
+      padding: 0;
+    }
+    .shop-mail__promotion {
+      width: 100%;
+      .shop-mail__promotion {
+        padding: 0;
+      }
+      .promotion-group__item span {
+        font-size: $font-14;
+        transform: translateY(0);
+      }
+    }
+  }
+  // today suggestion
+  .today-suggestions__item {
+    width: calc(100% / 2);
+  }
+  // footer
+  .footer {
+    display: none;
+  }
+  .footer__main-policies-item a {
+    font-size: 8px;
+  }
+
+  .p-20 {
+    padding: 15px 10px;
+  }
+  .mt-20 {
+    margin-top: 10px;
+  }
+}

@@ -1,0 +1,53 @@
+.model {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 99999;
+  cursor: pointer;
+  img {
+    width: 45rem;
+  }
+  &-close {
+    position: absolute;
+    top: 0;
+    right: -2rem;
+    font-size: 35px;
+    color: #fff;
+  }
+}
+
+.layer {
+  background-color: rgba(0, 0, 0, 0.3);
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  z-index: 99998;
+  cursor: pointer;
+}
+.model-ad {
+  display: none;
+  position: fixed;
+  bottom: 2rem;
+  right: 2rem;
+  z-index: 99997;
+  cursor: pointer;
+  img {
+    width: 8rem;
+  }
+  &-close {
+    position: absolute;
+    top: 0;
+    right: -1rem;
+    font-size: 2rem;
+    color: $orange-bold;
+  }
+}
+
+@media (max-width: 740px) {
+  .model {
+    width: 30rem;
+  }
+}

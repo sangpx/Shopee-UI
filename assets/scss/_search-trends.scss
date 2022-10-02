@@ -1,0 +1,38 @@
+.search-trends {
+  background-color: #fff;
+}
+
+// list
+.search-trends {
+  &__list {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  &__item {
+    width: calc(100% / 5);
+    border: 1px solid $bg-main;
+  }
+  &__link {
+    display: flex;
+    justify-content: space-between;
+    text-decoration: none;
+    padding-right: 1rem;
+  }
+  &__info {
+    padding: 2rem 1rem 2rem 2rem;
+    &-name {
+      font-size: $font-14;
+      color: #222222;
+    }
+    &-amount {
+      color: #757575;
+      font-size: $font-13;
+    }
+  }
+  &__img {
+    width: 99.56px;
+    height: 99.56px;
+    object-fit: contain;
+  }
+}

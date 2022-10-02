@@ -1,0 +1,105 @@
+.banner {
+  background-color: #fff;
+  &__top {
+    display: flex;
+    justify-content: space-between;
+  }
+  &__carousel {
+    width: calc(100% / 3 * 2 - 3px);
+    &-list {
+      list-style: none;
+      height: 235px;
+      &:hover .slick-next,
+      &:hover .slick-prev {
+        visibility: visible;
+        transition: all 0.4s linear;
+        opacity: 1;
+      }
+    }
+    &-item {
+      width: 797px;
+      height: 235px;
+      img {
+        width: 797px;
+        height: 235px;
+        object-fit: cover;
+        border-radius: $rounded-3;
+      }
+    }
+  }
+  &__right {
+    width: calc(100% / 3 - 2px);
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem 0;
+    &-item {
+      height: 115px;
+      img {
+        border-radius: $rounded-3;
+        height: 115px;
+        width: 100%;
+      }
+    }
+  }
+
+  .slick-next,
+  .slick-prev {
+    opacity: 0;
+    transition: all 0.4s linear;
+    visibility: hidden;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.2);
+    color: $text-white;
+    z-index: 10;
+    font-size: 25px;
+    padding: 1.5rem 1rem;
+    cursor: pointer;
+    &:hover {
+      background-color: rgba(0, 0, 0, 0.35);
+    }
+  }
+}
+// banner bottom
+.banner {
+  &__bottom {
+    &-list {
+      list-style: none;
+      display: flex;
+      justify-content: center;
+      align-self: center;
+    }
+    &-item {
+      width: calc(100% / 8);
+      padding: 2rem 0 1rem;
+      transition: animateName(transform);
+      &:hover {
+        transition: animateName(all);
+        transform: translateY(-0.2rem);
+      }
+      a {
+        color: $text-black;
+        text-decoration: none;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 10px 0;
+        font-size: $font-13;
+        span {
+          text-align: center;
+        }
+      }
+      img {
+        width: 45px;
+        height: 45px;
+      }
+    }
+  }
+}
+
+.banner-simple {
+  display: flex;
+  justify-content: center;
+}
